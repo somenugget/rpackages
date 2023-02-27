@@ -1,0 +1,6 @@
+require:
+  - rubocop-rspec
+  - rubocop-rails
+
+Style/Documentation:
+  Enabled: false
