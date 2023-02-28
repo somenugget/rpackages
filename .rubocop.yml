@@ -2,8 +2,21 @@ require:
   - rubocop-rspec
   - rubocop-rails
 
+Metrics/MethodLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'db/**/*'
+
+Layout/FirstHashElementIndentation:
+  Exclude:
+    - 'spec/**/*'
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
+
+Rspec/ExampleLength:
+  Max: 20
+
