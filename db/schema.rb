@@ -17,13 +17,14 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_28_114047) do
   create_table "packages", force: :cascade do |t|
     t.string "name", null: false
     t.string "version", null: false
-    t.string "r_version", null: false
     t.string "title"
+    t.string "r_version"
     t.jsonb "dependencies"
     t.jsonb "authors"
     t.jsonb "maintainers"
     t.datetime "publication_date"
     t.string "licence"
+    t.datetime "indexed_at", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_packages_on_name", unique: true

@@ -38,6 +38,8 @@ gem 'bootsnap', require: false
 
 gem 'httparty'
 
+gem 'rchardet'
+
 gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
 gem 'rubocop-rspec', require: false
@@ -46,6 +48,10 @@ group :development, :test do
   gem 'byebug'
 
   gem 'rspec-rails', '~> 6.0.0'
+end
+
+group do
+  gem 'database_cleaner-active_record'
 end
 
 group :development do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-describe GetExistingPackages do
+describe GetAllPackagesInfo do
   before do
     allow(HTTParty).to receive(:get).and_return(response)
   end

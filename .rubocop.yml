@@ -3,6 +3,7 @@ require:
   - rubocop-rails
 
 Metrics/MethodLength:
+  Max: 15
   Exclude:
     - 'spec/**/*'
     - 'db/**/*'
